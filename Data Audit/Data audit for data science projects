@@ -1,1 +1,16 @@
-
+Data Audit Code
+i) Data Audit Table
+This workbook contains code to audit excel data files
+By opening a 'csv' file and running the below code, each function will return a dataframe that can be pasted into a document. 
+1) data_audit The first function will create a dataframe that detects missing values for each column
+2) value_count This function returns a series containting counts of unqiue values for each column
+3) join_tables Returns an inner join of the two dataframes produced above
+ii) Deleting Missing Values
+This section can be used for deleting incomplete data in dataframes
+1) missing_values_table craetes a data for missing data only 
+2) remove_incomplete_columns The code runs the missing values table and removes the columns which contain more than x% of missing data
+For R users (& Python beginners)
+Copy whole script and paste into JupyterLab or JupyterNotebook.
+Change the read_csv argument to your chosen excel csv file.
+Select all script and press play.
+The Data audit table will be copied to a clipboard and can then just be pasted to an alternative source.
